@@ -11,6 +11,7 @@ import { UsersComponent } from './components/users/users.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
+import { CardComponent } from './components/profile/card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
     UsersComponent,
     HeaderComponent,
     NotFoundComponent,
+    CardComponent
    ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class UsersService {
 
   constructor(private http: HttpClient,private router: Router) { }
-  baseUrl = 'https://randomuser.me/api/'
+  baseUrl = 'https://randomuser.me/api/?results=5'
 
   getUser(): Observable<any> {
     return this.http.get<any>(this.baseUrl).pipe(

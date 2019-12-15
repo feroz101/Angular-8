@@ -1,0 +1,16 @@
+{
+    "users":[
+        {
+            "name":"sana",
+            "profession":"developer"
+        },
+        {
+            "name":"shakira",
+            "profession":"singer"
+        },
+        {
+            "name":"stephney",
+            "profession":"wristler"
+        }
+    ]
+}

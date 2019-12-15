@@ -8,19 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
- results: [];
+ public results:[]=[];
   constructor(private  usersService: UsersService, private router: Router) { }
- email;
- errorMessage;
- isError:boolean;
+ public email;
+ public errorMessage;
+ public isError:boolean;
  ngOnInit() {
      this
      .usersService
      .getUser()
      .subscribe((data) => {
        this.results = data.results;
-       this.email = this.results[0].email;
        this.isError=false
+       this.results.map((data:any)=>{
+         this.email=data.email;
+       })
       },
       (error)=>{this.errorMessage=error
        this.isError=true;
